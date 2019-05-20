@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - پنل SMS</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/MEH/MEH.css" rel="stylesheet" />
+
+</head>
+<body dir="rtl">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("پنل SMS", "Index", "Home", null, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="/Send" class="dropdown-toggle" data-toggle="dropdown">ارسال<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("ارسال SMS", "WebTools", "Tools")</li>
+                            <li>@Html.ActionLink("ارسال فلش", "FinishedTools", "Tools")</li>
+                            <li>@Html.ActionLink("ارسال زمان دار", "Index", "Tools")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/Messages" class="dropdown-toggle" data-toggle="dropdown">پیامها<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("کلیه پیامهای دریافتی", "WebTools", "Tools")</li>
+                            <li>@Html.ActionLink("کلیه پیامهای ارسالی", "FinishedTools", "Tools")</li>
+                            <li>@Html.ActionLink("پیامهای حذف شده", "Index", "Tools")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/Tools/Tools" class="dropdown-toggle" data-toggle="dropdown">امکانات<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("دفترچه", "WebTools", "Tools")</li>
+                            <li>@Html.ActionLink("نظرسنجی", "FinishedTools", "Tools")</li>
+                            <li>@Html.ActionLink("پیام تبریک تولد", "Index", "Tools")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/Tools/Tools" class="dropdown-toggle" data-toggle="dropdown">پشتیبانی<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("ایجاد تیکت", "WebTools", "Tools")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/Tools/Tools" class="dropdown-toggle" data-toggle="dropdown">تنظیمات<span class="caret"></span> </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("مشخصات کاربر", "WebTools", "Tools")</li>
+                            <li>@Html.ActionLink("گزارشات مالی", "WebTools", "Tools")</li>
+                        </ul>
+                    </li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li>@Html.ActionLink("Admin", "Index", "Admin")</li>
+                    }
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - مهدی ناصری</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script src="~/Scripts/MEH/MehJavaScript.js"></script>
+</body>
+</html>

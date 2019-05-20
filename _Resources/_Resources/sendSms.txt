@@ -1,0 +1,19 @@
+﻿ public bool sendSms(string mobile, bool typeMessage)
+        {
+            net.epayamak.Send objepayamak = new net.epayamak.Send();
+            long[] recId = new long[1];
+            byte[] status = new byte[1];
+            int r = 0;
+            string[] to = new string[1];
+
+            //string msg = "کد رهگیری : " + "\r\n" + generatePk_Code() + "\n\r" + DateTime.Now.Date.Date.ToString().Substring(0, 10)+"\n\r"+DateTime.Now.TimeOfDay.ToString().Substring(0, 7) ;
+            string fullName = txtName.Text + " " + txtFamily.Text;
+            string msg = staticClass2.kanon + "\r\n" + "نام:" + fullName + "\r\n" + "گروه علاقه مندی:" + ddlFavorites.SelectedItem.Text + "\r\n" + staticClass2.codeRahgiri + "\r\n" + generatePk_Code() + " " + "\r\n" + staticClass2.pseez + "\r\n" + staticClass2.pseez_ir;
+            to[0] = mobile;
+
+            r = objepayamak.SendSms(staticClass2.username, staticClass2.password, to, staticClass2.numberSpec, msg, typeMessage, "", ref  recId, ref status);
+            if (r == 1 && status[0] == 0)
+                return true;
+            else
+                return false;
+        }

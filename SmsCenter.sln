@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30110.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCenter", "SmsCenter\SmsCenter.csproj", "{0DC6D3E4-CE05-4DEE-9F22-3413BCE6C815}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCenter.DomainClasses", "SmsCenter.DomainClasses\SmsCenter.DomainClasses.csproj", "{9E821DB2-BE53-4616-AF7A-E881AC9DCD6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCenter.DataLayer", "SmsCenter.DataLayer\SmsCenter.DataLayer.csproj", "{609EB3A6-B857-47A5-A45B-E1BFC2E86605}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCenter.CommonLibrary", "SmsCenter.CommonLibrary\SmsCenter.CommonLibrary.csproj", "{8FD3D02D-469A-478E-B04C-312492C5496A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCenter.Reports", "SmsCenter.Reports\SmsCenter.Reports.csproj", "{3BFBAF70-AB45-42CE-A402-D3EF084012DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsCenter.ServiceLayer", "SmsCenter.ServiceLayer\SmsCenter.ServiceLayer.csproj", "{7A452F57-E5E0-473E-8D6C-F83BAFC0C44A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0DC6D3E4-CE05-4DEE-9F22-3413BCE6C815}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DC6D3E4-CE05-4DEE-9F22-3413BCE6C815}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DC6D3E4-CE05-4DEE-9F22-3413BCE6C815}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DC6D3E4-CE05-4DEE-9F22-3413BCE6C815}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E821DB2-BE53-4616-AF7A-E881AC9DCD6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E821DB2-BE53-4616-AF7A-E881AC9DCD6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E821DB2-BE53-4616-AF7A-E881AC9DCD6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E821DB2-BE53-4616-AF7A-E881AC9DCD6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{609EB3A6-B857-47A5-A45B-E1BFC2E86605}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{609EB3A6-B857-47A5-A45B-E1BFC2E86605}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{609EB3A6-B857-47A5-A45B-E1BFC2E86605}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{609EB3A6-B857-47A5-A45B-E1BFC2E86605}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD3D02D-469A-478E-B04C-312492C5496A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD3D02D-469A-478E-B04C-312492C5496A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD3D02D-469A-478E-B04C-312492C5496A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD3D02D-469A-478E-B04C-312492C5496A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3BFBAF70-AB45-42CE-A402-D3EF084012DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3BFBAF70-AB45-42CE-A402-D3EF084012DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3BFBAF70-AB45-42CE-A402-D3EF084012DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3BFBAF70-AB45-42CE-A402-D3EF084012DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A452F57-E5E0-473E-8D6C-F83BAFC0C44A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A452F57-E5E0-473E-8D6C-F83BAFC0C44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A452F57-E5E0-473E-8D6C-F83BAFC0C44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A452F57-E5E0-473E-8D6C-F83BAFC0C44A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
